@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body>
+        <a-scene arjs="patternRatio:0.70">
+            <a-marker type="pattern" url="patern-pyramida.patt">
+                <!-- Центральный кубик -->
+                <a-box position="0 -0.5 -2" scale="0.5 0.5 0.5" color="#7BC8A4" rotation="0 0 0"
+                 animation__pos="property: position; to: 0 6 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #EF2D5E; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <!-- Боковые кубики -->
+                <a-box position="1 4 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                 animation__pos="property: position; to: 1 -2.5 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <a-box position="-1 4 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                 animation__pos="property: position; to: -1 -2.5 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <!-- Вторая пара боковых -->
+                <a-box position="2 -0.5 -2" scale="0.5 0.5 0.5" color="#7BC8A4" rotation="0 0 0"
+                 animation__pos="property: position; to: 2 6 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #EF2D5E; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <a-box position="-2 -0.5 -2" scale="0.5 0.5 0.5" color="#7BC8A4" rotation="0 0 0"
+                 animation__pos="property: position; to: -2 6 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #EF2D5E; dur: 4000; easing: linear; loop: true">
+                </a-box>
+                <!-- Последняя пара кубиков -->
+                <a-box position="3 4 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                animation__pos="property: position; to: 3 -2.5 -2; dur: 4000; easing: linear; loop: true"
+                animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <a-box position="-3 4 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                 animation__pos="property: position; to: -3 -2.5 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 4000; easing: linear; loop: true">
+                </a-box>
+            <!-- Кубики, возвращающиеся обратно -->
+            <a-entity>
+                <!-- Центральный кубик -->
+                <a-box position="0 8 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                 animation__pos="property: position; to: 0 -2.5 -2; dur: 6500; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 6500; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 6500; easing: linear; loop: true">
+                </a-box>
+
+                <!-- Боковые кубики -->
+                <a-box position="1 4 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                 animation__pos="property: position; to: 1 -2.5 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <a-box position="-1 4 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                 animation__pos="property: position; to: -1 -2.5 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <!-- Вторая пара боковых -->
+                <a-box position="2 -0.5 -2" scale="0.5 0.5 0.5" color="#7BC8A4" rotation="0 0 0"
+                 animation__pos="property: position; to: 2 6 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #EF2D5E; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <a-box position="-2 -0.5 -2" scale="0.5 0.5 0.5" color="#7BC8A4" rotation="0 0 0"
+                 animation__pos="property: position; to: -2 6 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #EF2D5E; dur: 4000; easing: linear; loop: true">
+                </a-box>
+                <!-- Последняя пара кубиков -->
+                <a-box position="3 4 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                animation__pos="property: position; to: 3 -2.5 -2; dur: 4000; easing: linear; loop: true"
+                animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 4000; easing: linear; loop: true">
+                </a-box>
+
+                <a-box position="-3 4 -2" scale="0.5 0.5 0.5" color="#EF2D5E" rotation="0 0 0"
+                 animation__pos="property: position; to: -3 -2.5 -2; dur: 4000; easing: linear; loop: true"
+                 animation__rot="property: rotation; to: 360 360 0; dur: 4000; easing: linear; loop: true"
+                 animation__col="property: components.material.material.color; type: color; to: #7BC8A4; dur: 4000; easing: linear; loop: true">
+                </a-box>
+            </a-entity>
+            </a-marker>
+            <a-camera></a-camera>
+            <a-entity>
+                
+        </a-scene>
+    </body>
+</html>
